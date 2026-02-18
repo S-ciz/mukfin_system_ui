@@ -32,12 +32,16 @@ export function AuthProvider({ children }) {
 
   // Sign up: create user in db, then auto-login.
   const register = async (userData) => {
-    const created = await registerUser(userData)
-    const { password: _, ...safeUser } = created
-    sessionStorage.setItem('user', JSON.stringify(safeUser))
-    setUser(safeUser)
-    return safeUser
-  }
+    //add new field to capture data that exists
+    const created = (await registerUser(userData)).data.data;
+    const { password: _, ...safeUser } = created;
+    if (safeUser) {
+      sessionStorage.setItem("user", JSON.stringify(safeUser));
+      setUser(safeUser);
+    }
+
+    return safeUser;
+  };
 
   // Log out: clear localStorage and reset state.
   const logout = () => {
