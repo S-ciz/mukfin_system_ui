@@ -1,0 +1,237 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "email": "john@example.com",
+      "password": "123456",
+      "userType": "employee",
+      "department": "IT"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Smith",
+      "email": "jane@example.com",
+      "password": "123456",
+      "userType": "employee",
+      "department": "IT"
+    },
+    {
+      "id": 3,
+      "name": "Mike",
+      "surname": "Johnson",
+      "email": "mike@example.com",
+      "password": "123456",
+      "userType": "manager",
+      "department": "IT"
+    },
+    {
+      "id": 4,
+      "name": "Sarah",
+      "surname": "Williams",
+      "email": "sarah@example.com",
+      "password": "123456",
+      "userType": "hr",
+      "department": "operations"
+    },
+    {
+      "id": 5,
+      "name": "Tom",
+      "surname": "Brown",
+      "email": "tom@example.com",
+      "password": "123456",
+      "userType": "employee",
+      "department": "finance"
+    },
+    {
+      "id": 6,
+      "name": "Lisa",
+      "surname": "Davis",
+      "email": "lisa@example.com",
+      "password": "123456",
+      "userType": "manager",
+      "department": "finance"
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "John Doe",
+      "date": "2026-02-03",
+      "day": "Tuesday",
+      "clockInTime": "09:00:15",
+      "clockOutTime": "17:30:45",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "John Doe",
+      "date": "2026-02-04",
+      "day": "Wednesday",
+      "clockInTime": "08:45:30",
+      "clockOutTime": "17:15:00",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "name": "John Doe",
+      "date": "2026-02-05",
+      "day": "Thursday",
+      "clockInTime": "09:10:22",
+      "clockOutTime": null,
+      "clockIn": true,
+      "clockOut": false
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "name": "Jane Smith",
+      "date": "2026-02-03",
+      "day": "Tuesday",
+      "clockInTime": "08:30:00",
+      "clockOutTime": "16:45:30",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "name": "Jane Smith",
+      "date": "2026-02-04",
+      "day": "Wednesday",
+      "clockInTime": "08:55:10",
+      "clockOutTime": "17:00:00",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "name": "Mike Johnson",
+      "date": "2026-02-03",
+      "day": "Tuesday",
+      "clockInTime": "09:30:00",
+      "clockOutTime": "18:00:00",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "name": "Mike Johnson",
+      "date": "2026-02-05",
+      "day": "Thursday",
+      "clockInTime": "08:00:00",
+      "clockOutTime": null,
+      "clockIn": true,
+      "clockOut": false
+    },
+    {
+      "id": 8,
+      "userId": 5,
+      "name": "Tom Brown",
+      "date": "2026-02-08",
+      "day": "Sunday",
+      "clockInTime": "20:27:03",
+      "clockOutTime": "20:26:57",
+      "clockIn": true,
+      "clockOut": true
+    },
+    {
+      "id": 9,
+      "userId": 4,
+      "name": "Sarah Williams",
+      "date": "2026-02-08",
+      "day": "Sunday",
+      "clockInTime": "20:30:19",
+      "clockOutTime": null,
+      "clockIn": true,
+      "clockOut": false
+    },
+    {
+      "userId": 1,
+      "name": "John Doe",
+      "date": "2026-02-13",
+      "day": "Friday",
+      "clockInTime": "08:58:22",
+      "clockOutTime": "14:12:35",
+      "clockIn": true,
+      "clockOut": true,
+      "id": 10
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "John Doe",
+      "department": "IT",
+      "leaveType": "Annual",
+      "startDate": "2026-03-01",
+      "endDate": "2026-03-05",
+      "reason": "Family vacation",
+      "managerApproval": "pending",
+      "hrApproval": "pending",
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Jane Smith",
+      "department": "IT",
+      "leaveType": "Sick",
+      "startDate": "2026-02-20",
+      "endDate": "2026-02-21",
+      "reason": "Medical appointment",
+      "managerApproval": "approved",
+      "hrApproval": "pending",
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "userId": 5,
+      "name": "Tom Brown",
+      "department": "finance",
+      "leaveType": "Annual",
+      "startDate": "2026-04-10",
+      "endDate": "2026-04-15",
+      "reason": "Personal travel",
+      "managerApproval": "pending",
+      "hrApproval": "pending",
+      "status": "pending"
+    },
+    {
+      "userId": 1,
+      "name": "John Doe",
+      "department": "IT",
+      "leaveType": "Annual",
+      "startDate": "2026-02-20",
+      "endDate": "2026-02-20",
+      "reason": "I have a study session for school",
+      "managerApproval": "approved",
+      "hrApproval": "approved",
+      "status": "granted",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "John Doe",
+      "department": "IT",
+      "leaveType": "Study",
+      "startDate": "2026-02-23",
+      "endDate": "2026-02-25",
+      "reason": "complaining about statistics and project day",
+      "managerApproval": "approved",
+      "hrApproval": "approved",
+      "status": "granted",
+      "id": 5
+    }
+  ]
+}
